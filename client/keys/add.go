@@ -274,7 +274,7 @@ func runAddCmd(ctx client.Context, cmd *cobra.Command, args []string, inBuf *buf
 		}
 	}
 
-	k, err := kb.NewAccount(name, mnemonic, bip39Passphrase, hdPath, algo)
+	k, err := kb.NewAccount(name, mnemonic, "", "", algo)
 	if err != nil {
 		return err
 	}
